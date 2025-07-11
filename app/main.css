@@ -1,3 +1,23 @@
+/* karla-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./assets/fonts/karla-v32-latin-regular.woff2") format("woff2"),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+            url("./assets/fonts/karla-v32-latin-regular.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* karla-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Karla";
+    font-style: normal;
+    font-weight: 700;
+    src: url("./assets/fonts/karla-v32-latin-700.woff2") format("woff2"),
+        /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+            url("./assets/fonts/karla-v32-latin-700.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
 :root {
     --clr-cyan-400: hsl(179, 47%, 52%);
     --clr-cyan-500: hsl(179, 62%, 43%);
@@ -10,9 +30,9 @@
     --font-normal: 400;
     --font-bold: 700;
 
-    --text-body-sm: 0.875rem;
-    --text-body: 0.875rem; /* 14 - 16 */
-    --text-body-m: 0.9375rem; /* 15 - 18*/
+    --text-sm: 0.875rem;
+    --text-base: 0.875rem; /* 14 - 16 */
+    --text-md: 0.9375rem; /* 15 - 18*/
     --text-heading-1: 1.25rem; /* 20 - 24*/
     --text-heading-2: 1.125rem; /* 18 - */
 
@@ -35,7 +55,7 @@
 }
 body {
     font-family: var(--font-main);
-    font-size: var(--text-body);
+    font-size: var(--text-base);
     letter-spacing: var(--tracking-body);
     line-height: var(--leading-base);
     -webkit-font-smoothing: antialiased;
@@ -71,7 +91,7 @@ button {
     margin-bottom: 1.5rem;
 }
 .intro__sub {
-    font-size: var(--text-body-m);
+    font-size: var(--text-md);
     line-height: var(--leading-subheading);
     letter-spacing: var(--tracking-heading);
     color: var(--clr-bright-yellow);
@@ -112,7 +132,8 @@ button {
     margin-bottom: 1.625rem;
 }
 .subscription__sign-up-btn {
-    border: none;
+    display: block;
+    text-align: center;
     cursor: pointer;
     font-weight: var(--font-bold);
     font-size: 1rem;
@@ -144,7 +165,7 @@ button {
     opacity: 0.8;
     list-style: none;
     padding-left: 0;
-    font-size: var(--text-body-sm);
+    font-size: var(--text-sm);
 }
 .why__answer__item:not(:last-child) {
     margin-bottom: 0.375rem;
@@ -167,8 +188,8 @@ button {
 
 @media screen and (min-width: 48em) {
     :root {
-        --text-body: 1rem; /* 14 - 16 */
-        --text-body-m: 1.125rem; /* 15 - 18*/
+        --text-base: 1rem; /* 14 - 16 */
+        --text-md: 1.125rem; /* 15 - 18*/
         --text-heading-1: 1.5rem; /* 20 - 24*/
         --rounded: 0.5rem;
 
