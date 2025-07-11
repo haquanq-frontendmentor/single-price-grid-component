@@ -59,6 +59,11 @@
 
     --card-padding: clamp(1.5rem, 7.96vw - 0.366rem, 2.5rem);
 
+    --focus-outline-offset: 3px;
+    --focus-outline-width: 3px;
+    --focus-outline-style: dashed;
+    --focus-outline-color: var(--color-bright-yellow);
+
     --VERY-ODD-PIXEL: 1px;
 }
 *,
@@ -193,6 +198,17 @@ main {
 @media (prefers-reduced-motion: reduce) {
     .subscription__sign-up-btn {
         transition: none;
+    }
+}
+@supports selector(:focus-visible) {
+    .subscription__sign-up-btn:focus {
+        outline: 0;
+    }
+    .subscription__sign-up-btn:focus-visible {
+        outline-offset: var(--focus-outline-offset);
+        outline-style: var(--focus-outline-style);
+        outline-width: var(--focus-outline-width);
+        outline-color: var(--focus-outline-color);
     }
 }
 @media (hover: hover) {
