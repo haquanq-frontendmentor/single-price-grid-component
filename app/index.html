@@ -10,37 +10,41 @@
     <title>Frontend Mentor | Single Price Grid Component</title>
   </head>
   <body>
-    <main class="main__container">
+    <main>
       <article class="card__wrapper">
-        <section class="intro__wrapper">
-          <h1 class="intro__headline">Join our community</h1>
-          <h2 class="intro__sub">30-day, hassle-free money back guarantee</h2>
-          <p class="intro__description">
-            Gain access to our full library of tutorials along with expert code reviews. Perfect for
-            any developers who are serious about honing their skills.
-          </p>
-        </section>
-        <section class="subscription__wrapper">
-          <h2 class="subscription__headline">Monthly Subscription</h2>
-          <div class="subscription__price">
-            <p class="subscription__price--value">&dollar;29</p>
-            <p class="subscription__price--term">per month</p>
+        <div class="card__layout">
+          <div class="intro__wrapper">
+            <h1 class="intro__headline">Join our community</h1>
+            <p class="intro__sub">
+              <span class="intro__sub--text"> 30-day, hassle-free money back guarantee! </span>
+            </p>
+            <p class="intro__description">
+              Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers
+              who are serious about honing their skills.
+            </p>
           </div>
-          <p class="subscription__description">Full access for less than &dollar;1 a day</p>
-          <a class="subscription__sign-up-btn" type="button">Sign Up</a>
-        </section>
-        <section class="why__wrapper">
-          <h2 class="why__headline">Why Us</h2>
-          <ul class="why__answer__list">
-            <li class="why__answer__item">Tutorials by industry experts</li>
-            <li class="why__answer__item">Peer &amp; expert code review</li>
-            <li class="why__answer__item">Coding exercises</li>
-            <li class="why__answer__item">Access to our GitHub repos</li>
-            <li class="why__answer__item">Community forum</li>
-            <li class="why__answer__item">Flashcard decks</li>
-            <li class="why__answer__item">New videos every week</li>
-          </ul>
-        </section>
+          <section class="subscription__wrapper">
+            <h2 class="subscription__headline">Monthly Subscription</h2>
+            <p class="subscription__price">
+              <span class="subscription__price--value">&dollar;29</span>
+              <span class="subscription__price--term">per month</span>
+            </p>
+            <p class="subscription__description">Full access for less than <strong>&dollar;1</strong> a day</p>
+            <a class="subscription__sign-up-btn" href="">Sign Up</a>
+          </section>
+          <section class="feature__wrapper">
+            <h2 class="feature__title">Why Us</h2>
+            <ul class="feature__list">
+              <li class="feature__item">Tutorials by industry experts</li>
+              <li class="feature__item">Peer &amp; expert code review</li>
+              <li class="feature__item">Coding exercises</li>
+              <li class="feature__item">Access to our GitHub repos</li>
+              <li class="feature__item">Community forum</li>
+              <li class="feature__item">Flashcard decks</li>
+              <li class="feature__item">New videos every week</li>
+            </ul>
+          </section>
+        </div>
       </article>
     </main>
   </body>
